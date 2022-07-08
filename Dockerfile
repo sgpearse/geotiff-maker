@@ -12,6 +12,7 @@ RUN apt clean \
     && apt install -y python3 \
     && apt install -y python3-pip \
     && apt install -y gdal-bin \
+    && apt install -y gdal-data \
     && apt install -y libgdal-dev
 
 RUN python3 -m pip install gdal scipy Pillow cartopy numpy OWSLib

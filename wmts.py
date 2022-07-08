@@ -76,7 +76,8 @@ def degreesToMeters( ds, ulx, uly, lrx, lry ):
     lrx, lry = gdal.ApplyGeoTransform(gt, xs, ys)
 
     src_srs = gdal.osr.SpatialReference()
-    src_srs.ImportFromWkt(wkt_srs)
+    #src_srs.ImportFromWkt(wkt_srs)
+    src_srs.ImportFromProj4(wkt_srs.proj4_init)
 
     # export GDAL_DATA=/Users/pearse/miniconda3/envs/wmts/share/gdal
     tar_srs = gdal.osr.SpatialReference()
