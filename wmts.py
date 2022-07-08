@@ -113,7 +113,7 @@ def main():
     #layer = 'GOES-West_ABI_Band2_Red_Visible_1km'
 
     #tiffFile = "/Users/pearse/night6.tif"
-    tiffFile = "/Users/pearse/colorado2.tif"
+    tiffFile = "~/colorado2.tif"
 
     north = 40.25
     south = 39.6
