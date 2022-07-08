@@ -16,6 +16,6 @@ RUN apt clean \
 
 RUN python3 -m pip install gdal scipy Pillow cartopy numpy OWSLib
 
-RUN git clone https://github.com/sgpearse/geotiff-maker.git
-
-RUN python3 geotiff-maker/wmts.py
+RUN git clone https://github.com/sgpearse/geotiff-maker.git \
+    && ls \
+    && python3 geotiff-maker/wmts.py
